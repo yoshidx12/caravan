@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+ 
+.boxes {
+  width: 600px; /* 横幅 */
+  background-color: yellow; /* 背景赤色 */
+  margin: 0 auto;
+}
+.box1{
+  width: 150px; /* 横幅 */
+  height: 400px; /* 高さ */
+  background-color: orange; /* 背景色 */
+  float: left; /* 要素を左揃えで並べる */
+}
+.box2{
+  width: 250px; /* 横幅 */
+  height: 400px; /* 高さ */
+  background-color: red; /* 背景色 */
+  float: right; /* 要素を左揃えで並べる */
+}
