@@ -1,0 +1,8 @@
+section{
+  width: 300px; /* 幅 */
+  height: 300px; /* 高さ */
+  border: 2px solid #fa5893; /* 太さ、直線、色*/
+}
+span{
+  color: #fa5893;
+}
