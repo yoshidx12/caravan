@@ -13,7 +13,11 @@ a {
   display:block;
   clear:both;
 }
+header, nav, h2, .main-visual, footer {
+  font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
+}
 header {
+  position: relative;
   width: 90%;
   padding: 15px 0;
   margin: 0 auto;
@@ -22,6 +26,15 @@ header {
 /* クラス名headerのタグ内のh1にのみ適応される */
 header .headline{
   font-size: 32px;
+}
+.social{
+  position: absolute; /* .headerの左上を基準に位置を指定する */
+  top: 22px; /* .headerの左上から22px下に移動 */
+  right: 22px; /* .headerの右上から22px左に移動 */
+}
+.social i{
+  display: inline-block;
+  margin-left: 20px;
 }
 .nav-list {
   text-align: center;
@@ -176,4 +189,61 @@ footer {
 }
 .footer-text {
   color: #fff;
+}
+
+/* すべての画面で適用される設定です */
+.social i {
+  color: black;
+}
+
+/* スマートフォンサイズ(425px)程度の画面の大きさ以下に適用される設定です */
+@media screen and (max-width:425px) { 
+  header{
+    width: 100%;
+  }
+  .nav-list{
+    width:100%;
+  }
+  .nav-list-item{
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .social {
+    display:none;
+  }
+  .main-visual-content{
+    width: 100px;
+  }
+  main {
+    width: 100%;
+  }
+  .blog {
+    width: 100%;
+    margin: 0;
+  }
+  .blog-box {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .blog-image {
+    width: 49%;
+  }
+  .blog-text {
+    width: 49%;
+    padding-top: 5px;
+  }
+  .sidebar {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .instagram-box {
+    width: 48%;
+    padding-top: 48%;
+  }
+  .instagram-box:nth-child(odd) {
+    margin-right: 4%;
+  }
+  .pagination { 
+   margin-bottom: 50px;
 }
