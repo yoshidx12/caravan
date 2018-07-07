@@ -197,23 +197,23 @@ footer {
 }
 
 /* スマートフォンサイズ(425px)程度の画面の大きさ以下に適用される設定です */
-@media screen and (max-width:425px) { 
-  header{
+@media screen and (max-width:425px) {
+  header {
     width: 100%;
   }
-  .nav-list{
-    width:100%;
+  .nav-list {
+    width: 100%;
   }
-  .nav-list-item{
+  .nav-list-item {
     width: 100%;
     margin: 0 0 10px 0;
   }
   .social {
-    display:none;
+    display: none;
   }
-  .main-visual-content{
-    width: 100px;
-  }
+  .main-visual-content {
+    width: 100%;
+}
   main {
     width: 100%;
   }
@@ -246,4 +246,5 @@ footer {
   }
   .pagination { 
    margin-bottom: 50px;
-}
+  }}
+ 
